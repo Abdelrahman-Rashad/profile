@@ -24,50 +24,34 @@ class _HomeState extends State<Home> {
                 width: 200,
                 color: Colors.brown[200],
               ),
-              Text(
-                'Name : ....',
-                style: TextStyle(
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
+              model('Name : ....'),
               Container(
                 color: Colors.blueGrey,
                 height: 15.0,
               ),
-              Text(
-                'Age : ....',
-                style: TextStyle(
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
+              model('Age : ....'),
               Container(
                 color: Colors.blueGrey,
                 height: 15.0,
               ),
-              Text(
-                'Education : ....',
-                style: TextStyle(
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
+              model('Education : ....'),
               Container(
                 color: Colors.blueGrey,
                 height: 15.0,
               ),
-              Text(
-                'Address : ....',
-                style: TextStyle(
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
+              model('Address : ....'),
             ],
           ),
         ),
       ),
     );
   }
+}
+
+Widget model(String s) {
+  return Text(
+    s,
+    style: TextStyle(
+        fontSize: 25.0, fontWeight: FontWeight.bold, color: Colors.white),
+  );
 }
