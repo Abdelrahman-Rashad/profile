@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -13,11 +11,18 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Profile'),
-        centerTitle: true,
         leading: Icon(Icons.person),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.black54,
       ),
-      body: null,
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              color: Colors.black45,
+            )
+          ],
+        ),
+      ),
     );
   }
 }
